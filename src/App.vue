@@ -11,13 +11,23 @@
       Our team
     </h2>
     <div class="team_container">
-
+      <pavlo-hertsun-component></pavlo-hertsun-component>
+      <pavlo-hertsun-component></pavlo-hertsun-component>
     </div>
+    <div class="team_container">
+      <pavlo-hertsun-component></pavlo-hertsun-component>
+
+      <pavlo-hertsun-component></pavlo-hertsun-component>
+    </div>
+
   </div>
 </template>
 
 <script>
+import PavloHertsunComponent from "@/components/PavloHertsunComponent.vue";
+
 export default {
+  components: {PavloHertsunComponent},
   methods: {
     scrollToDiv() {
       const targetDiv = document.querySelector('.target_div');
@@ -66,5 +76,11 @@ export default {
   font-size: 32px;
   font-weight: 400;
   color: #d9d9d9;
+}
+.team_container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
 }
 </style>
