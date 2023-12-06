@@ -12,7 +12,7 @@
     </h2>
     <div class="team_container">
       <pavlo-hertsun-component></pavlo-hertsun-component>
-      <pavlo-hertsun-component></pavlo-hertsun-component>
+      <derpak-viktoriia-component></derpak-viktoriia-component>
     </div>
     <div class="team_container">
       <pavlo-hertsun-component></pavlo-hertsun-component>
@@ -25,9 +25,10 @@
 
 <script>
 import PavloHertsunComponent from "@/components/PavloHertsunComponent.vue";
+import DerpakViktoriiaComponent from "./components/DerpakViktoriiaComponent.vue";
 
 export default {
-  components: {PavloHertsunComponent},
+  components: {PavloHertsunComponent, DerpakViktoriiaComponent},
   methods: {
     scrollToDiv() {
       const targetDiv = document.querySelector('.target_div');
@@ -35,6 +36,7 @@ export default {
     }
   }
 }
+
 </script>
 
 <style scoped>
