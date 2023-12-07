@@ -9,7 +9,7 @@
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci cupiditate dolore, dolores eos est itaque laboriosam laborum nemo non, possimus praesentium provident quibusdam, quod ratione reiciendis sit tempora vel voluptatibus.
       </p>
-      <p class="clown_emoji">🤡</p>
+      <p class="clown_emoji position_text">🤡</p>
     </div>
   </div>
 </template>
@@ -59,6 +59,7 @@ export default {
   font-size: 20px;
   font-weight: normal;
   padding-left: 2%;
+  text-align: center;
 }
 .additional_info_container {
   display: none;
