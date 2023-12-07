@@ -1,6 +1,6 @@
 <template>
   <div class="outside_container" @mouseover="showAdditionalInfo" @mouseout="hideAdditionalInfo">
-    <img src="@/assets/denys_photo.png" alt="photo">
+    <img class="denys-img" src="@/assets/denys_photo.png" alt="photo">
     <div class="text_container">
       <p class="name_text">Bartosevych Denys</p>
       <p class="position_text">Full-stack Developer</p>
@@ -94,14 +94,30 @@ export default {
 }
 
 @keyframes clownAnimation {
-  0%{
-    transform: scale(100%);
+  0% {
+    transform: scale(100%) rotate(0);
   }
-  50%{
-    transform: scale(200%);
+  50% {
+    transform: scale(200%) rotate(180deg);
+  }
+  100% {
+    transform: scale(100%) rotate(360deg);
+  }
+}
+.denys-img{
+  transition: transform 1s;
+}
+
+.denys-img:hover {
+  animation: rotationAnimation 4s infinite linear;
+}
+
+@keyframes rotationAnimation {
+  0%{
+    transform: rotate(0);
   }
   100%{
-    transform: scale(100%);
+    transform: rotate(360deg);
   }
 }
 </style>
