@@ -19,7 +19,9 @@
 
       <bartosevych-denys-component></bartosevych-denys-component>
     </div>
-
+    <div class="text_container">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci deserunt dolore dolorum eum exercitationem in ipsum laboriosam minima modi nam nemo optio quas repudiandae, sapiente sunt, temporibus tenetur totam veniam.
+    </div>
   </div>
 </template>
 
